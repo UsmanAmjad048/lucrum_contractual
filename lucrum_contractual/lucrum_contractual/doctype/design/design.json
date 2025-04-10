@@ -11,7 +11,14 @@
   "naming_series",
   "design_name",
   "article_number",
-  "description"
+  "description",
+  "column_break_qfk9z",
+  "category",
+  "drop",
+  "season",
+  "section_break_qtyd5",
+  "main_part",
+  "sub_part"
  ],
  "fields": [
   {
@@ -40,11 +47,46 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "column_break_qfk9z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "drop",
+   "fieldtype": "Data",
+   "label": "Drop"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Data",
+   "label": "Season"
+  },
+  {
+   "fieldname": "section_break_qtyd5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "main_part",
+   "fieldtype": "Link",
+   "label": "Main Part",
+   "options": "Main Part"
+  },
+  {
+   "fieldname": "sub_part",
+   "fieldtype": "Link",
+   "label": "Sub Part",
+   "options": "Sub Part"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-10 14:52:08.306724",
+ "modified": "2025-04-10 16:55:39.875357",
  "modified_by": "Administrator",
  "module": "Lucrum Contractual",
  "name": "Design",

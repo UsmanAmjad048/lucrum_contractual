@@ -9,6 +9,7 @@
   "workstation",
   "article_name",
   "component",
+  "sub_part",
   "column_break_m12be",
   "piece_rate",
   "piece_qty",
@@ -34,10 +35,11 @@
    "reqd": 1
   },
   {
+   "fetch_from": "sub_part.main_part",
    "fieldname": "component",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "component",
+   "label": "Main Part",
    "options": "Parts",
    "reqd": 1
   },
@@ -46,7 +48,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "component.piece_price",
+   "fetch_from": "sub_part.rate",
    "fieldname": "piece_rate",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -86,12 +88,19 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Worked by: Employee Name"
+  },
+  {
+   "fieldname": "sub_part",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Part",
+   "options": "Sub Part"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-10 14:48:33.409943",
+ "modified": "2025-04-10 17:04:54.381988",
  "modified_by": "Administrator",
  "module": "Lucrum Contractual",
  "name": "Sewing Rate Table",
