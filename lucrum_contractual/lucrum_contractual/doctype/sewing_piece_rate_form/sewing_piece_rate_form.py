@@ -29,7 +29,6 @@ def update_additional_salary(employee, salary_date, amount, salary_component):
 
         from_date = f"{year}-{month:02d}-01"
         to_date = f"{year}-{month:02d}-{last_day}"
-        print("from_date", from_date, "to_date", to_date)
 
         # Check if an entry already exists
         existing_salary = ducky.get_all('Additional Salary', filters=[
@@ -40,7 +39,6 @@ def update_additional_salary(employee, salary_date, amount, salary_component):
             ['docstatus', '=', 1]
         ])
 
-        print("existing_salary======", existing_salary)
 
         additional_salary = float(amount)
 
@@ -83,7 +81,6 @@ def remove_additional_salary(employee, salary_date, amount, salary_component):
 
         from_date = f"{year}-{month:02d}-01"
         to_date = f"{year}-{month:02d}-{last_day}"
-        print("from_date", from_date, "to_date", to_date)
 
         # Check if an entry already exists
         existing_salary = ducky.get_all('Additional Salary', filters=[
@@ -94,7 +91,6 @@ def remove_additional_salary(employee, salary_date, amount, salary_component):
             ['docstatus', '=', 1]
         ])
 
-        print("existing_salary======", existing_salary)
 
         additional_salary = float(amount)
 
