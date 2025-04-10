@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-10 14:31:33.300150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workstation",
+  "article_name",
+  "component",
+  "column_break_m12be",
+  "piece_rate",
+  "piece_qty",
+  "amount",
+  "section_break_y6ax9",
+  "worked_by_employee_id",
+  "worked_by_employee_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workstation",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Article Name",
+   "options": "Design",
+   "reqd": 1
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "component",
+   "options": "Parts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_m12be",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "component.piece_price",
+   "fieldname": "piece_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Piece Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "piece_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Piece Qty",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_y6ax9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "worked_by_employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Worked by: Employee Id",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "worked_by_employee_id.employee_name",
+   "fieldname": "worked_by_employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Worked by: Employee Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-10 14:48:33.409943",
+ "modified_by": "Administrator",
+ "module": "Lucrum Contractual",
+ "name": "Sewing Rate Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
